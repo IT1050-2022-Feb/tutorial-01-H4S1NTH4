@@ -13,7 +13,7 @@
 
 #   #eval $ans
 # }
-
+    
 echo Which program do you want to run?
 echo
 echo 1 - Tute01.c
@@ -37,8 +37,8 @@ case $no in 1*)
 ;;
 esac
 
-clang-7 -pthread -lm -o main $filename
-./main
+gcc $filename -o main
+./main 
 
 # echo
 # echo
